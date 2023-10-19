@@ -221,6 +221,7 @@ ul {
 
 /* FOOTER START STYLE */
 .footer {
+    position: relative;
     align-items: center;
     padding: 280px 0 97px 0;
     background: #0B1524;
@@ -305,6 +306,7 @@ ul {
     flex-direction: column;
     margin-left: 80px;
 }
+
 .footer-box-4 {
     margin-top: 1px;
     display: flex;
@@ -320,6 +322,7 @@ ul {
     line-height: normal;
     text-decoration: none;
 }
+
 .footer-box-4 a {
     color: white;
     font-size: 16px;
@@ -334,7 +337,9 @@ ul {
 }
 
 .ting {
-
+    position: absolute;
+    top: 2850px;
+    left: 2500px;
     margin-bottom: 200px;
     width: 863px;
     height: 275px;
@@ -342,7 +347,8 @@ ul {
     background: #1B2330;
     box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.25);
     padding: 42px 38px 15px 15px;
-    position: absolute;
+    z-index: 1;
+
     /* margin-left: 160px; */
 }
 
@@ -404,13 +410,14 @@ ul {
 
 @media only screen and (max-width:1200px) {
     .footer {
+        position: relative;
         flex-wrap: wrap;
         width: 100%;
         width: 375px;
         height: 1032px;
         flex-shrink: 0;
         background: #0B1524;
-        
+
 
     }
 
@@ -435,7 +442,7 @@ ul {
         /* margin-left: 34px; */
         width: 279px;
         height: 96px;
-        
+
     }
 
     .footer-box-2 {
@@ -452,10 +459,11 @@ ul {
     .footer-box-4 {
         flex-wrap: wrap;
     }
-    .footer-box-3x   {
+
+    .footer-box-3x {
         margin-left: 34px;
     }
-    
+
 }
 
 @media only screen and (max-width:1100px) {
